@@ -1,7 +1,8 @@
 import { Trans } from '@lingui/react';
 import React from 'react';
-import { Container } from '~/components/components';
+import { Container, Flex } from '~/components/components';
 import { Typography } from '~/components/Typography';
+import { Button } from '../Button';
 
 export const Anonymous = (): React.ReactElement => (
   <Container>
@@ -11,17 +12,21 @@ export const Anonymous = (): React.ReactElement => (
     <Typography variant="BoldHeadline6" pb="40px" textAlign="start">
       <Trans id="home_main_claim" />
     </Typography>
-    <button
-      type="button"
-      onClick={() => console.log('sign up')}
-    >
-      <Trans id="global__sign_up" />
-    </button>
-    <button
-      type="button"
-      onClick={() => console.log('registration')}
-    >
-      <Trans id="registration" />
-    </button>
+    <Flex flexDirection="column" alignItems="center">
+      <Flex mb="20px">
+        <Button
+          type="button"
+          onClick={() => console.log('sign up')}
+        >
+          <Trans id="global__sign_up" />
+        </Button>
+      </Flex>
+      <Button
+        type="button"
+        onClick={() => console.log('registration')}
+      >
+        <Trans id="registration" />
+      </Button>
+    </Flex>
   </Container>
 );

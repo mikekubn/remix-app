@@ -25,8 +25,8 @@ export const meta: MetaFunction = () => ({
 
 export const loader = () => ({
   ENV: {
-    LSTV_GRAPHQL_API_URL: process.env.LSTV_GRAPHQL_API_URL,
-    LSTV_BROWSER_APP_URL: process.env.LSTV_BROWSER_APP_URL,
+    LSTV_GRAPHQL_API_URL: process.env.TEST_ENV_URL,
+    LSTV_BROWSER_APP_URL: process.env.TEST_ENV_VALUE,
   },
 });
 

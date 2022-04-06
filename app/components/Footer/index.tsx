@@ -10,7 +10,7 @@ const Footer = (): React.ReactElement => (
       <Typography variant="BoldBodySmall" pr="20px">
         <Trans id="terms_of_service" />
       </Typography>
-      <Typography variant="BoldBodySmall" fontWeight="bold">
+      <Typography variant="BoldBodySmall">
         <Trans id="about_flashtv" />
       </Typography>
     </Flex>

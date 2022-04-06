@@ -4,6 +4,7 @@ import { Trans } from '@lingui/react';
 import { Brand } from '~/components/Brand';
 import { Flex } from '~/components/components';
 import { Typography } from '~/components/Typography';
+import { Button } from '../Button';
 
 const TopPanel = (): React.ReactElement => (
   <TopPanelContainer>
@@ -12,12 +13,11 @@ const TopPanel = (): React.ReactElement => (
       <Typography variant="BodySmall" fontFamily="LSFinder" fontWeight="bold" pr="20px">
         <Trans id="header_have_account" />
       </Typography>
-      <button
-        type="button"
+      <Button
         onClick={() => console.log('click on sign in.')}
       >
         <Trans id="global__sign_in" />
-      </button>
+      </Button>
     </Flex>
   </TopPanelContainer>
 );

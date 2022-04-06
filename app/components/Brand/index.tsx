@@ -7,7 +7,6 @@ const Brand = (): React.ReactElement => (
     <img src="/img/myself.png" alt="Logomark" style={{ height: '30px', width: '30px' }} />
     <Typography
       variant="BrandHeadline6"
-      color="red"
       as="h1"
       pr="40px"
       data-cy="header-flash-tv"
